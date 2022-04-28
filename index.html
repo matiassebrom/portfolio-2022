@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Orbitron:wght@500;700;900&display=swap"
         rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/88372f43ec.js" crossorigin="anonymous"></script>
+
     <!-- devicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
@@ -16,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Matias Romero</title>
-    <script src="./js/transitions.js"></script>
+
 </head>
 
 <body>
@@ -28,137 +31,160 @@
             </div>
 
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#projects">proyectos</a></li>
-                <li><a href="#skills">Tecnologias</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active">
+                    <a href="#home">
+                        <i class="fa-solid fa-house-user"></i>
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li><a href="#projects">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <p>proyectos</p>
+                    </a>
+                </li>
+                <li><a href="#skills">
+                        <i class="fa-solid fa-hammer"></i>
+                        <p>Tecnologias</p>
+                    </a>
+                </li>
+                <li> <a href="#contact">
+                        <i class="fa-solid fa-message"></i>
+                        <p>Contacto</p>
+                    </a>
+                </li>
+
             </ul>
         </nav>
     </header>
     <!-- main -->
     <main>
         <!-- home -->
-        <section id="home" class="">
-            <div>
-                <div class="home_logo">
-                    <img src="./img/logo.png" alt="">
-                    <p>matiassebrom</p>
-                </div>
-                <div class="home_description transition-duration-05 show-on-scroll">
-                    <p>aaaaaLorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quae tenetur cumque harum
-                        numquam
-                        perferendis dignissimos, neque dolores iste vitae corporis suscipit fugiat? Recusandae dicta
-                        corrupti,
-                        laboriosam repellendus reprehenderit tempore.</p>
-                    <!--                         <p>Mi Nombre es Matias, y soy programador. 
-                                                Hago este portfolio para mostrar y listar algunos proyectos en los que participe y las habilidades que voy adquiriendo.
-                                                Luego de varios años trabajando en otro rubro, por fin pude dedicarle tiempo y esfuerzo a la programacion. 
-                                                Encantando con esta disciplina busco seguir aprendiendo cosas y poder dedicarme al 100% a desarrollar software </p> -->
-                </div>
-                <div class="scroll_down">
-                    <i>scroll a proyectos </i>
+        <section id="home" class="show-animation">
+
+            <div class="home-logo">
+                <img class="home-img" src="./img/logoMatiassebrom.png" alt="">
+                <div class="home-d"><span class="home-p">matiassebrom</p>
                 </div>
             </div>
+
+            <div class="home_description">
+                <p class="home_description_p">Mi Nombre es Matias, y soy programador.
+                    Hago este portfolio para mostrar y listar algunos proyectos en los que participe y las habilidades
+                    que voy adquiriendo.
+                    Luego de varios años trabajando en otro rubro, por fin pude dedicarle tiempo y esfuerzo a la
+                    programacion.
+                    Encantando con esta disciplina busco seguir aprendiendo cosas y poder dedicarme al 100% a
+                    desarrollar software.
+                </p>
+            </div>
+
         </section>
         <!-- end home -->
 
 
         <!-- Projects -->
-        <section id="projects" class="">
+        <section id="projects" class="hide ">
 
-            <div>
-                <h2>proyectos</h2>
-                <div class="projects-container">
-                    <article class="">
-                        <img src="https://image.shutterstock.com/image-vector/picture-icon-isolated-on-white-600w-1451100425.jpg"
-                            alt="web cubo">
-                        <p class="text-highlighted">encajarle neomorphismo agregar un buen efecto hoover</p>
-                    </article>
-                    <article class="">
-                        <img src="https://image.shutterstock.com/image-vector/picture-icon-isolated-on-white-600w-1451100425.jpg"
-                            alt="web cubo">
-                        <p class="text-highlighted">encajarle neomorphismo agregar un buen efecto hoover</p>
-                    </article>
-                    <article class="transition-duration-05 show-on-scroll">
-                        <img src="https://image.shutterstock.com/image-vector/picture-icon-isolated-on-white-600w-1451100425.jpg"
-                            alt="web cubo">
-                        <p class="text-highlighted">agregar un buen efecto hoover</p>
-                    </article>
-                </div>
+
+            <h2>proyectos</h2>
+            <div class="projects-container">
+                <article class="">
+                    <img src="https://image.shutterstock.com/image-vector/picture-icon-isolated-on-white-600w-1451100425.jpg"
+                        alt="web cubo">
+                    <span class="">
+                        <p>www.cubo.com</p>
+                    </span>
+                    <span>
+                        <p class="">Cubo web</p>
+                    </span>
+                </article>
+                <article class="">
+                    <img src="https://image.shutterstock.com/image-vector/picture-icon-isolated-on-white-600w-1451100425.jpg"
+                        alt="web cubo">
+                    <span class="">
+                        <p class="">Pomodoro App</p>
+                    </span>
+                </article>
+                <article class="">
+                    <img src="https://image.shutterstock.com/image-vector/picture-icon-isolated-on-white-600w-1451100425.jpg"
+                        alt="web cubo">
+                    <span class="">
+                        <p class="">App con appi</p>
+                    </span>
+                </article>
             </div>
+
         </section>
 
         <!-- skills -->
-        <section id="skills">
+        <section id="skills" class="hide ">
 
-            <div>
-                <h2>Habilidades</h2>
-                <div class="tech-container">
-                    <div>
-                        <i class="devicon-html5-plain"></i>
-                        <p>html</p>
-                    </div>
-                    <div>
-                        <i class="devicon-css3-plain"></i>
-                        <p>css</p>
-                    </div>
-                    <div>
-                        <i class="devicon-javascript-plain"></i>
-                        <p>javscript</p>
-                    </div>
-                    <div>
-                        <i class="devicon-sass-original"></i>
-                        <p>sas</p>
-                    </div>
-                    <div>
-                        <i class="devicon-git-plain"></i>
-                        <p>git</p>
-                    </div>
-                    <div>
-                        <i class="devicon-github-original"></i>
-                        <p>github</p>
-                    </div>
+
+            <h2>Habilidades</h2>
+            <div class="tech-container">
+                <div class="skill">
+                    <i class="devicon-html5-plain"></i>
+                    <p>html</p>
                 </div>
-
-
-
+                <div class="skill">
+                    <i class="devicon-css3-plain"></i>
+                    <p>css</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-javascript-plain"></i>
+                    <p>javscript</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-sass-original"></i>
+                    <p>sass</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-git-plain"></i>
+                    <p>git</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-github-original"></i>
+                    <p>github</p>
+                </div>
             </div>
+
+
+
+
         </section>
 
         <!-- contact -->
-        <section id="contact">
-            <div>
-                <h2>contacto</h2>
-                <div>
-
-                    <form action="">
-                        <span>
-                            <tag>Correo</tag>
-                            <input type="text" placeholder="...@...">
-                        </span>
-                        <span>
-                            <tag>telefono</tag>
-                            <input type="text" placeholder="...@...">
-                        </span>
-                        <span>
-                            <tag>Asunto</tag>
-                            <input type="text" placeholder="...@...">
-                        </span>
-                        <span>
-                            <tag>mensaje</tag>
-                            <input type="textarea" placeholder="...@...">
-                        </span>
-                        <button type="submit"> enviar</button>
-                    </form>
-                    <div>
-                        <a href="null"> matiassebrom@gmail.com</a>
-                        <a href="null"> Linkedin</a>
-                        <a href="null"> github</a>
-                        <a href="null"> whatsapp</a>
-
-                    </div>
+        <section id="contact" class="hide ">
+            <h2>contacto</h2>
+            <div class="contact-container">
+                <form class="contact-form" action="">
+                    <span class="contact-inputs  ">
+                        <tag>Correo</tag>
+                        <input type="text" placeholder="...@...">
+                    </span>
+                    <span class="contact-inputs">
+                        <tag>telefono</tag>
+                        <input type="text" placeholder="...@...">
+                    </span>
+                    <span class="contact-inputs ">
+                        <tag>Asunto</tag>
+                        <input type="text" placeholder="...@...">
+                    </span>
+                    <span class="contact-inputs ">
+                        <tag>mensaje</tag>
+                        <input type="textarea" placeholder="...@...">
+                    </span>
+                    <button type="submit" class="contact-inputs "> enviar</button>
+                </form>
+                <div class="contact-links-container">
+                    <a class="contact-links " href="null"> matiassebrom@gmail.com</a>
+                    <a class="contact-links " href="null"> Linkedin</a>
+                    <a class="contact-links " href="null"> github</a>
+                    <a class="contact-links " href="null"> whatsapp</a>
 
                 </div>
+
+
             </div>
 
 
@@ -170,7 +196,7 @@
 
     </footer>
     <script src="./js/app.js"></script>
-
+    <script src="./js/transitions.js"></script>
 </body>
 
 </html>
